@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>v-if</title>
+    </head>
+    <body>
+    <div id="app">
+        <template v-if="greet">
+            <h1>Hello World!</h1>
+            <p>Hello Vue!</p>
+        </template>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                greet:false
+            }
+        })
+    </script>
+    </body>
+</html>

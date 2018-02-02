@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+    </head>
+    <body>
+    <div id="app">
+        <ul v-for="tab in tabs">
+            <li>{{tab.text}}</li>
+        </ul>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                tabs:[
+                    {text:'你就是我'},
+                    {text:'心中的棉花糖'},
+                    {text:'甜蜜的梦想'}
+                ]
+            }
+        })
+    </script>
+    </body>
+</html>
